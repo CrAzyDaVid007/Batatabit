@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movile first</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Inter:slnt,wght@-10..0,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/tablet.css" media="(min-width: 930px)">
+    <link rel="stylesheet" href="./css/botones.css">
+</head>
+<body>
+    <header>
+        <img src="./assets/imgs/group-19.svg" alt="">
+        <div class="header--title-container">
+            <h1>La próxima revolución en el intercambio de criptomonedas</h1>
+            <p>Batatabit te ayuda a navegar entre los diferentes precios y tendencias</p>
+            <a href="#plans" class="header--button">Conoce nuestros planes <span></span></a>
+        </div>
+    </header>
+    <main>
+        <section class="main-exchange-container">
+            <div class="backgroundImg"></div>
+            <div class="main-exchange-container--title">
+                <h2>Visibilizamos todas las tasas de cambio.</h2>
+                <p>Traemos información en tiempo real de las casas de cambio y las monedas más importantes del mundo.</p>
+            </div>
+            <section class="main-tables-container">
+                <div class="main-currency-table">
+                    <p class="currency-table--title">Comisiones</p>
+                    <div class="currency-table--container">
+                        <table>
+                            <tr>
+                                <td class="table__top-left">Bitrade</td>
+                                <td class="table__top-right table__right">$12.96 <span class="down-uno"></span></td>
+                            </tr>
+                            <tr>
+                                <td>Bitpreco</td>
+                                <td class="table__right">$13.07 <span class="down-dos"></span></td>
+                            </tr>
+                            <tr>
+                                <td>Novadax</td>
+                                <td class="table__right">$13.15 <span class="up-uno"></span></td>
+                            </tr>
+                            <tr>
+                                <td class="table__bottom-left">Coinext</td>
+                                <td class="table__bottom-right table__right">$14.96 <span class="up-dos"></span></td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="currency-table--date">
+                        <p><b>Actualizado:</b> 19 de Julio 23:45</p>
+                    </div>
+                </div>
+            </section>
+        </section>
+
+        <section class="main-product-detail">
+            <span class="product-detail--batata-logo"></span>
+            <div class="product-detail--title">
+                <h2>Creamos un producto sin comparación.</h2>
+                <p>Confiable y diseñado para su uso diario</p>
+            </div>
+            <section class="product-cards--container">
+                <section class="plans-container--slider">
+                    <article class="product-detail--card">
+                        <span class="clock"></span>
+                        <p class="product--card-title">Tiempo real</p>
+                        <p class="product--card-body">Nuestra API toma información minuto a minuto sobre las tasas que más determinan el comportamiento.</p>
+                        <button onclick="mostrarInfo('Tiempo real')">Más información</button>
+                    </article>
+                    <article class="product-detail--card-dos">
+                        <span class="eye"></span>
+                        <p class="product--card-title-dos">No hay tasas escondidas</p>
+                        <p class="product--card-body-dos">Ni en la compra o al momento de exit, Batatabit siempre se muestra el costo real de lo que es adquiriendo.</p>
+                        <button onclick="mostrarInfo('No hay tasas escondidas')">Más información</button>
+                    </article>
+                    <article class="product-detail--card-tres">
+                        <span class="dollar"></span>
+                        <p class="product--card-title-tres">Compara monedas</p>
+                        <p class="product--card-body-tres">No más rumores, con Batatabit sabrás el valor real de cada moneda en el mercado actual.</p>
+                        <button onclick="mostrarInfo('Compara monedas')">Más información</button>
+                    </article>
+                    <article class="product-detail--card-cuatro">
+                        <span class="check"></span>
+                        <p class="product--card-title-cuatro">Información confiable</p>
+                        <p class="product--card-body-cuatro">Nuestras fuentes están 100% verificadas y continuamos auditando su contenido mientras se actualizan.</p>
+                        <button onclick="mostrarInfo('Información confiable')">Más información</button>
+                    </article>
+                </section>
+            </section>
+        </section>
+
+        <section class="bitcoin-img-container">
+            <h2>Conócelo hoy.</h2>
+        </section>
+
+        <section id="plans" class="main-plans-container">
+            <div class="plans--title">
+                <h2>Escoge el plan que mejor se ajuste a ti.</h2>
+                <p>Cualquier plan te da acceso completo a nuestra plataforma</p>
+            </div>
+            <section class="plans-container--slider">
+                <article class="plans-container--card-uno">
+                    <p class="recomendado-uno">Recomendado</p>
+                    <div class="plan-info-container-uno">
+                        <h3 class="plan-card--title-uno">Pago anual</h3>
+                        <p class="plan-card--price-uno"><span>$</span>49</p>
+                        <p class="plan-card--saving-uno">* Ahorras $129 comparado al plan mensual.</p>
+                        <button class="plan-card--ca-uno" onclick="mostrarInfo('Plan anual - $49')">Escoger este <span></span></button>
+                    </div>
+                </article>
+                <article class="plans-container--card-dos">
+                    <div class="plan-info-container-dos">
+                        <h3 class="plan-card--title-dos">Pago mensual</h3>
+                        <p class="plan-card--price-dos"><span>$</span>5</p>
+                        <p class="plan-card--saving-dos">* Plan básico para mantenerte informado</p>
+                        <button class="plan-card--ca-dos" onclick="mostrarInfo('Plan básico - $5')">Escoger este <span></span></button>
+                    </div>
+                </article>
+                <article class="plans-container--card-tres">
+                    <div class="plan-info-container-tres">
+                        <h3 class="plan-card--title-tres">Acceso de por vida</h3>
+                        <p class="plan-card--price-tres"><span>$</span>99</p>
+                        <p class="plan-card--saving-tres">* Ahorras $999+ comparado al plan anual</p>
+                        <button class="plan-card--ca-tres" onclick="mostrarInfo('Plan de por vida - $99')">Escoger este <span></span></button>
+                    </div>
+                </article>
+            </section>
+        </section>
+
+        <!-- Sección para mostrar información adicional del plan -->
+        <section id="info-seccion" style="display: none;">
+            <h2 id="plan-titulo">Información del Plan</h2>
+            <p id="plan-detalle">Detalles adicionales sobre el plan seleccionado.</p>
+            <button onclick="cerrarInfo()">Cerrar</button>
+        </section>
+    </main> 
+
+    <footer>
+        <section class="left">
+            <ul >
+                <li><a href="#">LinkedIn</a></li>
+                <li><a href="#">Crunchbase</a></li>
+                <li><a href="#">Hacker News</a></li>
+            </ul>
+        </section>
+        <section class="right">
+            <img src=".//assets/imgs/Group 18.svg" alt="Logo de Batabit 2020">
+        </section>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        function mostrarInfo(plan) {
+            // Muestra la sección de información y actualiza el contenido
+            document.getElementById("info-seccion").style.display = "block";
+            document.getElementById("plan-titulo").innerText = plan;
+            document.getElementById("plan-detalle").innerText = `Detalles adicionales sobre el ${plan.toLowerCase()}.`;
+        }
+
+        function cerrarInfo() {
+            // Oculta la sección de información
+            document.getElementById("info-seccion").style.display = "none";
+        }
+    </script>
+</body>
+</html>
